@@ -1,0 +1,214 @@
+@font-face {
+    font-family: PTSans Narrow;
+    src: url(../fonts/web/ptsansnarrow.woff); 
+    
+    font-family: PTSans Narrow Bold;
+    src: url(../fonts/web/ptsansnarrowbold.woff); 
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*end reset*/
+
+body{
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-position:top;
+    font-family: "PTSans Narrow", sans-serif;
+}
+.container{
+    width: 940px;
+    height: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.index-header{
+    background: black;
+}
+.nav-block{
+    display: inline-block;
+    width: 540px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    font-family: "PTSans Narrow Bold", sans-serif;
+}
+.nav-block ul li{
+    text-decoration: none;
+    display: inline;
+}
+.nav-block ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 20px;   
+}
+.user-block{
+    display: inline-block;
+    float: right;
+    width: 140px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: right;
+    background-image: url(../img/login-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    font-family: "PTSans Narrow Bold", sans-serif;
+}
+.login a{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+}
+.index-logo{
+    width: 368px;
+    margin: 50px auto; 
+}
+
+.features{
+    color: white;
+    margin-bottom: 80px;
+}
+.features-item{
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    
+    margin-right: 10px;
+}
+.features-item h2{
+    font-family: "PTSans Narrow Bold", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.features-item h2:after{
+    content: "     ";
+    
+    background-image: url(../img/feature-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.features-item p{
+    font-family: "PTSans Narrow Bold", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+.features:last-child{
+    margin-right: 0px;
+}
+.index-content{
+    background:
+        url(../img/content-separator.png) no-repeat center,
+        #f8f5f2 url(../img/index-content-bg.png);
+    margin-top: 35px;
+}
+.content-left{
+    display: inline-block;
+    width: 380px;
+    margin-left: 70px;
+    vertical-align: top;
+}
+.content-right{
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    margin-left: 120px;
+    margin-right: auto;
+}
+.content-left, .content-right{
+    margin-bottom: 50px;
+}
+.content-title{
+    font-family: "PTSans Narrow Bold", sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+   
+}
+.content-descr{
+    font-family: "PTSans Narrow Bold", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+.btn-min{
+    display: inline-block;
+    color: white;
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    text-align: center;
+    line-height: 36px;
+    font-family: "PTSans Narrow Bold", sans-serif;
+    
+}
+div.btn-min:hover{
+    cursor:pointer;
+}
+a.btn-min{
+    text-decoration: none;
+}
+
+.content-gallery{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.left-btn{
+    margin-right: 15px;
+}
+.content-right::before{
+    content: "";
+    background-image: url(../img/content-separator.svg);
+}
+
