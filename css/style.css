@@ -2,6 +2,9 @@
     font-family: PTSans Narrow;
     src: url(../fonts/web/ptsansnarrow.woff); 
     
+    
+}
+@font-face {
     font-family: PTSans Narrow Bold;
     src: url(../fonts/web/ptsansnarrowbold.woff); 
 }
@@ -53,7 +56,7 @@ table {
 /*end reset*/
 
 body{
-    background-image: url("../img/background.jpg");
+    background:black url("../img/background.jpg");
     background-repeat: no-repeat;
     background-position:top;
     font-family: "PTSans Narrow", sans-serif;
@@ -106,7 +109,8 @@ body{
 }
 .index-logo{
     width: 368px;
-    margin: 50px auto; 
+    margin: 60px auto; 
+    margin-bottom: 30px;
 }
 
 .features{
@@ -143,14 +147,12 @@ body{
     line-height: 24px;
     text-align: center;
 }
-.features:last-child{
-    margin-right: 0px;
-}
 .index-content{
     background:
         url(../img/content-separator.png) no-repeat center,
         #f8f5f2 url(../img/index-content-bg.png);
     margin-top: 35px;
+    margin-bottom: 45px;
 }
 .content-left{
     display: inline-block;
@@ -171,7 +173,7 @@ body{
 .content-title{
     font-family: "PTSans Narrow Bold", sans-serif;
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     margin-top: 50px;
    
 }
@@ -179,7 +181,10 @@ body{
     font-family: "PTSans Narrow Bold", sans-serif;
     font-size: 14px;
     line-height: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+}
+.date{
+    font-family: "PTSans Narrow", sans-serif;
 }
 .btn-min{
     display: inline-block;
@@ -202,13 +207,113 @@ a.btn-min{
 .content-gallery{
     display: block;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 .left-btn{
     margin-right: 15px;
 }
-.content-right::before{
-    content: "";
-    background-image: url(../img/content-separator.svg);
+.form-text{
+    height: 40px;
+    width: 126px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    
+    font-family: "PTSans Narrow Bold", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 10px;
+    
+}
+.form-left{
+    margin-right: 13px;
+}
+.form-btn{
+    height: 40px;
+    width: 100%;
+    
+    font-family: "PTSans Narrow Bold", sans-serif;
+    font-size: 14px;
+    color: white;
+    
+    background-color: black;
+    border: 0px;
+}
+.form-btn:hover{
+    cursor:pointer;
 }
 
+.index-footer{
+    background: url(../img/index-footer.jpg);
+    
+    font-family: "PTSans Narrow Bold", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.footer-descr{
+    display: inline-block;
+    width: 380px;
+       
+}
+.footer-descr a{
+    color: white;
+}
+.footer-social{
+    display: inline-block;
+    width: 140px;
+}
+.vk, .fb, .inst{
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background-color: black;
+    margin-right: 4px;
+}
+.vk{
+    background-image: url(../img/social-vk.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.fb{
+    background-image: url(../img/social-fb.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.inst{
+    background-image: url(../img/social-inst.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 0px;
+}
+.social-title{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+.footer-dev{
+    display: inline-block;
+    width: 140px;
+    margin-left: 260px;
+    vertical-align: top;
+}
+.dev-title{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+.dev-academy{
+    display: inline-block;
+    width: 100%;
+    height: 42px;
+    background-color: black;
+}
+.dev-academy{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 42px;
+}
